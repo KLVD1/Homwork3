@@ -46,23 +46,27 @@ public class Main {
         System.out.println ("\n\tЗадание#4\n");
 
         int productivityInTwoMinutes =16;
-        int workingHours2Min =2;
-        int productivityInOneMin =productivityInTwoMinutes/workingHours2Min;
+        int minutesPerDay =2;// минут в день
+        long productivityInOneMin =productivityInTwoMinutes/minutesPerDay;
 
+        //20 минут
         int workingHours20Min =20;
-        int productivityIn20Minutes=productivityInOneMin * workingHours20Min;
+        long productivityIn20Minutes=productivityInOneMin * workingHours20Min;
         System.out.println("За 20 минут машина произвела "+productivityIn20Minutes+" штук бутылок");
 
+        //1 сутки
         int workingHoursOneDay =60*24;
-        int productivityInOneDay=productivityInOneMin * workingHoursOneDay;
+        long productivityInOneDay=productivityInOneMin * workingHoursOneDay;
         System.out.println("За 1 сутки машина произвела "+ productivityInOneDay +" штук бутылок");
 
-        int workingHoursTreeDay =60*24*3;
-        int productivityInTreeDay=productivityInOneMin * workingHoursTreeDay;
+        //3 суток
+        int workingHours3Day =60*24*3;
+        long productivityInTreeDay=productivityInOneMin * workingHours3Day;
         System.out.println("За 3 суток машина произвела "+ productivityInTreeDay +" штук бутылок");
 
+        //1 месяц
         int workingHours31Day =60*24*31;
-        int productivityIn31Day=productivityInOneMin * workingHours31Day;
+        long productivityIn31Day=productivityInOneMin * workingHours31Day;
         System.out.println("За 1 месяц машина произвела "+ productivityIn31Day +" штук бутылок");
 
         System.out.println ("\n\tЗадание#5\n");
@@ -78,15 +82,15 @@ public class Main {
 
         System.out.println ("\n\tЗадание#6\n");
 
-        int banane= 5;
-        int gramsOneBanane= 80;
+        int bananas= 5;
+        int gramsPerBanane= 80;
         int milk=2;
-        int grams100Milk=105;
+        int weightPer100MlMilk=105;
         int icecream=2;
         int grams100Icecream=100;
         int eggs=4;
-        int gramsOneEggs=70;
-        int sportsbreakfastgrams= (banane*gramsOneBanane)+(milk*grams100Milk)+(icecream*grams100Icecream)+(eggs*gramsOneEggs);
+        int grams1Eggs=70;
+        int sportsbreakfastgrams= (bananas*gramsPerBanane)+(milk*weightPer100MlMilk)+(icecream*grams100Icecream)+(eggs*grams1Eggs);
         double kg=1000.0;
         double sportsbreakfastKg=sportsbreakfastgrams/kg;
         System.out.println("Вес спортзавтрака "+sportsbreakfastgrams+" в граммах "+"\nВес спортзавтрака "+ sportsbreakfastKg+" в киллограмах");
